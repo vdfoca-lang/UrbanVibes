@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN VIBES - ropa urbana</title>
+<link rel="stylesheet" href="../css/estilos.css">
+<link rel="icon" href="/RopaUrbana/assets/images/icono.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/
+dist/css/bootstrap.min.css" rel="stylesheet" integrity="s
+ha384-
+F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZ
+MI3AhiU" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/…"
+crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+<div class="demo-section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow navbar-background">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="#">Urban Vibes</a>
+                    
+                    <!-- Botón hamburguesa para móviles -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Menú colapsable -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="carrito.html">Carrito 🛒</a>
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="formularioiniciodesesion.html">Iniciar sesion</a>
+                            <a class="nav-link" href="registro.html">Registrarse</a>
+                            <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal de sucursales -->
+    <main>
+        <div class="container mt-5">
+            <h1 class="text-center mb-5">📍 Nuestras Sucursales</h1>
+            
+            <!-- Información de sucursales -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="sucursal-card">
+                        <h3>🏪 Sucursal Centro</h3>
+                        <div class="sucursal-info">
+                            <p><strong>📍 Dirección:</strong> Zeballos 1475, Rosario, Santa Fe</p>
+                            <p><strong>📞 Teléfono:</strong> +54 341 123-4567</p>
+                            <p><strong>🕒 Horarios:</strong></p>
+                            <ul>
+                                <li>Lunes a Viernes: 9:00 - 18:00</li>
+                                <li>Sábados: 9:00 - 14:00</li>
+                                <li>Domingos: Cerrado</li>
+                            </ul>
+                            <p><strong>🚗 Estacionamiento:</strong> Disponible en el local</p>
+                            <p><strong>🚌 Transporte:</strong> Líneas 101, 102, 103, 104</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="sucursal-card">
+                        <h3>🏬 Sucursal Shopping</h3>
+                        <div class="sucursal-info">
+                            <p><strong>📍 Dirección:</strong> Shopping del Siglo, Local 45, Rosario</p>
+                            <p><strong>📞 Teléfono:</strong> +54 341 987-6543</p>
+                            <p><strong>🕒 Horarios:</strong></p>
+                            <ul>
+                                <li>Lunes a Domingo: 10:00 - 22:00</li>
+                                <li>Feriados: 10:00 - 22:00</li>
+                            </ul>
+                            <p><strong>🚗 Estacionamiento:</strong> Shopping del Siglo</p>
+                            <p><strong>🚌 Transporte:</strong> Líneas 110, 115, 120</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa interactivo mejorado -->
+            <div class="map-section">
+                <h2 class="text-center mb-4">🗺️ Ubicación de Nuestras Tiendas</h2>
+                <div class="map-container-large">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.890875621236!2d-60.648159325310026!3d-32.95389037225276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab118b57507d%3A0xb944055348ac8a2e!2sZeballos%201475%2C%20S2000BQC%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1756669876325!5m2!1ses-419!2sar"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                
+                <!-- Botones de acción del mapa -->
+                <div class="map-actions mt-3">
+                    <button class="btn btn-primary" onclick="abrirEnGoogleMaps()">
+                        🗺️ Abrir en Google Maps
+                    </button>
+                    <button class="btn btn-success" onclick="obtenerDirecciones()">
+                        🧭 Obtener Direcciones
+                    </button>
+                </div>
+            </div>
+
+            <!-- Información adicional -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="info-adicional">
+                        <h3>ℹ️ Información Importante</h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <h4>🚚 Envíos</h4>
+                                    <p>Realizamos envíos a todo el país desde nuestras sucursales.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <h4>🔄 Cambios y Devoluciones</h4>
+                                    <p>30 días para cambios y devoluciones en cualquiera de nuestras tiendas.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <h4>💳 Formas de Pago</h4>
+                                    <p>Aceptamos efectivo, tarjetas y transferencias bancarias.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer mejorado -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Sección Empresa -->
+                <div class="footer-section">
+                    <h3>Urban Vibes</h3>
+                    <p style="color: rgba(0, 0, 0, 0.8); line-height: 1.6; margin-bottom: 20px;">
+                        Tu destino para la moda urbana más exclusiva. Calidad, estilo y tendencia en cada prenda.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">📘</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="Twitter">🐦</a>
+                        <a href="#" title="YouTube">📺</a>
+                        <a href="#" title="WhatsApp">💬</a>
+                    </div>
+                </div>
+
+                <!-- Sección Enlaces -->
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="quienessomos.html">Quienes somos</a></li>
+                        <li><a href="sucursales.html">Sucursales</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="carrito.html">Mi Carrito</a></li>
+                        <li><a href="registro.html">Crear Cuenta</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="contact-info">
+                        <p>📍 Rosario, Santa Fe, Argentina</p>
+                        <p>📞 +54 341 123-4567</p>
+                        <p>✉️ info@urbanvibes.com</p>
+                        <p>🕒 Lun - Vie: 9:00 - 18:00</p>
+                        <p>🕒 Sáb: 9:00 - 14:00</p>
+                    </div>
+                </div>
+
+                <!-- Sección Mapa -->
+                <div class="footer-section">
+                    <h3>Nuestra Ubicación</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.890875621236!2d-60.648159325310026!3d-32.95389037225276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab118b57507d%3A0xb944055348ac8a2e!2sZeballos%201475%2C%20S2000BQC%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1756669876325!5m2!1ses-419!2sar"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Urban Vibes. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function abrirEnGoogleMaps() {
+            window.open('https://www.google.com/maps/search/?api=1&query=Zeballos+1475+Rosario+Santa+Fe+Argentina', '_blank');
+        }
+        
+        function obtenerDirecciones() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    window.open(`https://www.google.com/maps/dir/${lat},${lng}/Zeballos+1475+Rosario+Santa+Fe+Argentina`, '_blank');
+                });
+            } else {
+                alert('La geolocalización no está disponible en este navegador.');
+            }
+        }
+    </script>
+    <script src="../js/theme.js"></script>
+    
+</body>
+</html>
