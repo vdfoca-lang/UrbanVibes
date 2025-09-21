@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN VIBE - Ropa urbana</title>
+    <link rel="icon" href="./assets/images/icono.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/
+dist/css/bootstrap.min.css" rel="stylesheet" integrity="s
+ha384-
+F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZ
+MI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+    <div class="demo-section">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white rounded shadow navbar-background">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="#">Urban Vibes</a>
+                    
+                    <!-- Botón hamburguesa para móviles -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Menú colapsable -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                            <a class="nav-link" href="pages/carrito.html">Carrito 🛒</a>
+                            <a class="nav-link" href="pages/catalogo.html">Catálogo</a>
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="pages/formularioiniciodesesion.html">Iniciar sesion</a>
+                            <a class="nav-link" href="pages/registro.html">Registrarse</a>
+                            <button class="theme-toggle"><i class="fas fa-moon"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+</header>
+
+    <main>
+    <section id="banner">
+        <h1>Bienvenido a Urban vibes</h1>
+        <p>Moda urbana con estilo callejero</p>
+    </section>
+
+    <div class="container mt-5">
+        <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <!-- Primer slide - 3 imágenes -->
+                <div class="carousel-item active">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="./assets/images/RemeraUrban.jpg" class="product-image" alt="Remera Urban">
+                                <div class="image-overlay">
+                                    <h5>Remera Urban</h5>
+                                    <p>$25.000</p>
+                                    <button class="btn btn-primary btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="./assets/images/ConjuntoSlim.jpg" class="product-image" alt="Conjunto">
+                                <div class="image-overlay">
+                                    <h5>Conjunto Slim</h5>
+                                    <p>$45.500</p>
+                                    <button class="btn btn-primary btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="./assets/images/ZapatillasUrban.jpg" class="product-image" alt="Zapatillas">
+                                <div class="image-overlay">
+                                    <h5>Zapatillas Street</h5>
+                                    <p>$75.945</p>
+                                    <button class="btn btn-primary btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segundo slide - 3 imágenes -->
+                <div class="carousel-item">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="./assets/images/HoodieUrban.jpg" class="product-image" alt="Hoodie">
+                                <div class="image-overlay">
+                                    <h5>Hoodie Comfort</h5>
+                                    <p>$55.949</p>
+                                    <button class="btn btn-primary btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-container">
+                                <img src="./assets/images/CamperaUrban.jpg" class="product-image" alt="Chaqueta">
+                                <div class="image-overlay">
+                                    <h5>Chaqueta Urban</h5>
+                                    <p>$89.549</p>
+                                    <button class="btn btn-primary btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" id="gorra">
+                            <div class="image-container">
+                                <img src="./assets/images/GorraUrban.jpg" class="product-image" alt="Gorra">
+                                <div class="image-overlay">
+                                    <h5>Gorra Style</h5>
+                                    <p>$19.855</p>
+                                    <button class="btn btn-primary btn-sm">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Sección Empresa -->
+            <div class="footer-section">
+                <h3>Urban Vibes</h3>
+                <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6; margin-bottom: 20px;">
+                    Tu destino para la moda urbana más exclusiva. Calidad, estilo y tendencia en cada prenda.
+                </p>
+                <div class="social-links">
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="Twitter">🐦</a>
+                    <a href="#" title="YouTube">📺</a>
+                    <a href="#" title="WhatsApp">💬</a>
+                </div>
+            </div>
+
+            <!-- Sección Enlaces -->
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="pages/quienessomos.html">Quienes somos</a></li>
+                    <li><a href="pages/sucursales.html">Sucursales</a></li>
+                    <li><a href="pages/catalogo.html">Catálogo</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="pages/carrito.html">Mi Carrito</a></li>
+                    <li><a href="pages/registro.html">Crear Cuenta</a></li>
+                </ul>
+            </div>
+
+            <!-- Sección Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-info">
+                    <p>📍 Rosario, Santa Fe, Argentina</p>
+                    <p>📞 +54 341 123-4567</p>
+                    <p>✉️ info@urbanvibes.com</p>
+                    <p>🕒 Lun - Vie: 9:00 - 18:00</p>
+                    <p>🕒 Sáb: 9:00 - 14:00</p>
+                </div>
+            </div>
+
+            <!-- Sección Mapa -->
+            <div class="footer-section">
+                <h3>Nuestra Ubicación</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8998756212636!2d-60.648159325310026!3d-32.95389037225276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1c0c4e0c4d%3A0x7890fe7f56d7e123!2sRosario%2C%20Santa%20Fe%2C%20Argentina!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Urban Vibes. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+<script src="js/theme.js"></script>
+
+    
+</body>
+</html>
